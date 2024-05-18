@@ -1,0 +1,31 @@
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+
+  h2 {
+    text-align: center;
+  }
+
+  .main__textContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    font-family: "CalifornianBold";
+
+    div {
+      width: 75%;
+      margin-top: 40px;
+      color: $COLOR_TEXT_SECONDARY;
+      text-align: center;
+    }
+  }
+}

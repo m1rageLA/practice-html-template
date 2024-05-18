@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Californian";
+  src: url("../../assets/font/CALIFB.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CalifornianBold";
+  src: url("../../assets/font/CALIFB.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-image: url("../../assets/images/header-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+.header__logo {
+  z-index: 3;
+  margin-top: 50px;
+}
+.header__logo img {
+  width: 150px;
+}
+.header .header__arrows {
+  z-index: 3;
+  margin-top: auto;
+  margin-bottom: 30px;
+  animation: opacityAnimation 3s infinite;
+}
+@keyframes opacityAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.main__container h2 {
+  text-align: center;
+}
+.main__container .main__textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  font-family: "CalifornianBold";
+}
+.main__container .main__textContainer div {
+  width: 75%;
+  margin-top: 40px;
+  color: #616161;
+  text-align: center;
+}
+
+body {
+  margin: 0 40px;
+  padding: 0;
+  height: 100vh;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-menu ul li {
+  font-family: "Californian";
+  color: #616161;
+  font-size: 15px;
+}
+.nav-menu ul li:hover {
+  color: #858585;
+}
+
+/*# sourceMappingURL=styles.css.map */

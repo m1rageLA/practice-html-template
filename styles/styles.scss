@@ -1,0 +1,39 @@
+@import "fonts";
+@import "utils/variables";
+@import "layout/header";
+@import "layout/main";
+
+body {
+  margin: 0 40px;
+  padding: 0;
+  height: 100vh;
+  background-color: $COLOR_TEXT_PRIMARY;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+    li {
+      font-family: "Californian";
+      color: $COLOR_TEXT_SECONDARY;
+      font-size: 15px;
+      
+      &:hover {
+        color: $COLOR_TEXT_HOVER;
+      }
+    }
+  }
+}
