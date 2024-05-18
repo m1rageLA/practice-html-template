@@ -1,23 +1,41 @@
+@mixin cardProps {
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 35px;
+    font-family: "Californian";
+  }
+
+  p {
+    font-family: "Californian";
+  }
+}
+
 main {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
+  align-items: center;
   margin-top: 60px;
 }
 
 .main__container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 70%;
 
   h2 {
     text-align: center;
   }
 
-  .main__textContainer {
+  .main__textBlock {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     width: 70%;
     font-family: "CalifornianBold";
 
@@ -27,5 +45,59 @@ main {
       color: $COLOR_TEXT_SECONDARY;
       text-align: center;
     }
+  }
+}
+
+.content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 80px;
+
+  &__indentDownRightBlock {
+    margin-top: 20px;
+  }
+
+  &__cards_left {
+    grid-column: 1;
+    @include cardProps;
+
+    div {
+      margin-bottom: 60px;
+    }
+    p {
+      margin: 0 0 20px 0;
+      color: $COLOR_TEXT_SECONDARY;
+    }
+    h3 {
+      margin: 40px 0 25px 0;
+    }
+  }
+
+  &__cards_right {
+    margin-top: 50px;
+    grid-column: 2;
+    @include cardProps;
+
+    div {
+      margin-bottom: 60px;
+    }
+    p {
+      margin: 0 0 40px 0;
+      color: $COLOR_TEXT_SECONDARY;
+    }
+    h3 {
+      margin: 0 0 25px 0;
+    }
+  }
+
+  img {
+    transition: opacity 0.4s ease;
+  }
+
+  img:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
 }
