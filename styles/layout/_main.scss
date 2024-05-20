@@ -68,7 +68,7 @@
       margin-bottom: 60px;
     }
     p {
-      margin: 0 0 20px 0; 
+      margin: 0 0 20px 0;
       color: $COLOR_TEXT_SECONDARY;
     }
     h3 {
@@ -117,7 +117,7 @@
 
   .content {
     grid-template-columns: 1fr;
-
+    gap: 0px;
     &__cards_left {
       grid-column: 1;
     }
@@ -131,13 +131,13 @@
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
-    .main__container {
-      width: 85%;
-    }
+  .main__container {
+    width: 85%;
+  }
 
-    .content {
-      h3 {
-        font-size: 25px;
-      }
+  .content {
+    h3 {
+      font-size: 25px;
     }
+  }
 }

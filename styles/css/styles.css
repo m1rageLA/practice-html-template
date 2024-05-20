@@ -166,6 +166,7 @@
   }
   .content {
     grid-template-columns: 1fr;
+    gap: 0px;
   }
   .content__cards_left {
     grid-column: 1;
