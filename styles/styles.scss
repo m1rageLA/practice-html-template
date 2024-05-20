@@ -16,8 +16,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
 }
 
 .nav-menu {
@@ -37,7 +36,8 @@ a {
       font-family: "Californian";
       color: $COLOR_TEXT_SECONDARY;
       font-size: 15px;
-
+      cursor: pointer;
+      
       &:hover {
         color: $COLOR_TEXT_HOVER;
       }

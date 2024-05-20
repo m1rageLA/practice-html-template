@@ -241,8 +241,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
 }
 
 .nav-menu {
@@ -262,6 +261,7 @@ a {
   font-family: "Californian";
   color: #616161;
   font-size: 15px;
+  cursor: pointer;
 }
 .nav-menu ul li:hover {
   color: #b8b771;
