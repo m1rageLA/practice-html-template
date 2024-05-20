@@ -2,12 +2,17 @@
 @import "utils/variables";
 @import "layout/header";
 @import "layout/main";
+@import "layout/footer";
 
 body {
-  margin: 0 40px;
+margin: 0;
   padding: 0;
   height: 100vh;
   background-color: $COLOR_TEXT_PRIMARY;
+}
+
+.container {
+  margin: 0 40px;
 }
 
 a {

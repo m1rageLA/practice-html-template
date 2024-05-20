@@ -82,7 +82,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 50px;
   margin-top: 80px;
 }
 .content__indentDownRightBlock {
@@ -145,47 +145,16 @@
 
 .footer {
   display: flex;
-  justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: #fafafa;
 }
 
-.footer__textBlock {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.footer__textBlock h3 {
-  font-size: 35px;
-  font-family: "CalifornianBold";
-}
-.footer__textBlock p {
-  text-align: center;
-}
-
-.footer__addit-info {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.footer__addit-info div {
-  width: 50%;
-  margin-top: 50px;
-  text-align: center;
-}
-
 body {
-  margin: 0;
+  margin: 0 40px;
   padding: 0;
   height: 100vh;
   background-color: white;
-}
-
-.container {
-  margin: 0 40px;
 }
 
 a {
@@ -210,6 +179,4 @@ a {
 }
 .nav-menu ul li:hover {
   color: #b8b771;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

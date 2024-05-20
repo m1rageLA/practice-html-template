@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: #fafafa;
+}
+
+.footer__textBlock {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    font-size: 35px;
+    font-family: "CalifornianBold";
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.footer__addit-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  div {
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
