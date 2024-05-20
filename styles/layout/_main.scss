@@ -14,6 +14,7 @@
 }
 
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -67,7 +68,7 @@
       margin-bottom: 60px;
     }
     p {
-      margin: 0 0 20px 0;
+      margin: 0 0 20px 0; 
       color: $COLOR_TEXT_SECONDARY;
     }
     h3 {
@@ -76,7 +77,6 @@
   }
 
   &__cards_right {
-    margin-top: 50px;
     grid-column: 2;
     @include cardProps;
 
@@ -100,4 +100,44 @@
     opacity: 0.7;
     cursor: pointer;
   }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  main {
+    margin-top: 0px !important;
+  }
+  .main__container {
+    width: 100%;
+
+    .main__textBlock {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+
+    &__cards_left {
+      grid-column: 1;
+    }
+    &__cards_right {
+      grid-column: 1;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .main__container {
+      width: 85%;
+    }
+
+    .content {
+      h3 {
+        font-size: 25px;
+      }
+    }
 }
